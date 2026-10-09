@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff8f3">
+  <meta name="description" content="A little berry birthday made especially for you.">
+  <title>Birthday Elii 🍓</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div id="particle-layer" aria-hidden="true"></div>
+
+  <!-- OPENING -->
+  <div class="opening" id="opening">
+    <div class="opening-doodle doodle-berry doodle-strawberry">🍓</div>
+    <div class="opening-doodle doodle-berry doodle-blueberry">🫐</div>
+    <div class="opening-sparkle sparkle-a">✦</div>
+    <div class="opening-sparkle sparkle-b">✧</div>
+
+    <div class="opening-card">
+      <p class="eyebrow">surpriseeee!!!</p>
+      <h1>Holaa Elii,<br><span>I made something for you 🥳</span></h1>
+      <p class="opening-copy">希望你喜歡。</p>
+      <p class="ready">Are you ready?</p>
+      <button class="primary-btn" id="openBtn" type="button">
+        Open it<span></span>
+      </button>
+      <p class="tiny-note">👀</p>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#home" aria-label="Home">
+      <span class="brand-berry">🍓</span>
+      <span>cherr.mell</span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#garden">Garden</a>
+      <a href="#letter">Letter</a>
+      <a href="#memories">Memories</a>
+      <a href="#music">Music</a>
+    </nav>
+
+    <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <a href="#home">Home</a>
+    <a href="#garden">Garden</a>
+    <a href="#letter">Letter</a>
+    <a href="#memories">Memories</a>
+    <a href="#music">Music</a>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero section" id="home">
+      <div class="hero-leaf leaf-one">⌁</div>
+      <div class="hero-leaf leaf-two">⌁</div>
+      <div class="hero-deco heart-one">♡</div>
+      <div class="hero-deco heart-two">♥</div>
+      <div class="hero-deco star-one">✦</div>
+      <div class="hero-deco star-two">✧</div>
+
+      <div class="hero-copy reveal">
+        <p class="eyebrow">伊萊的生日慶祝活動</p>
+        <h2>Happy Birthday,<br><em id="heroName">Elii</em></h2>
+        <p class="hero-subtitle">to someone who makes ordinary days<br class="desktop-only"> feel a little sweeter.</p>
+        <a class="text-link" href="#garden">come see your little garden <span>↓</span></a>
+      </div>
+
+      <div class="hero-mascot-wrap reveal">
+        <div class="hero-halo"></div>
+        <div class="hero-berry strawberry-character large" data-berry="hero" tabindex="0" role="button" aria-label="Strawberry mascot">
+          <div class="berry-leaves"><i></i><i></i><i></i></div>
+          <div class="berry-body">
+            <span class="seed s1"></span><span class="seed s2"></span><span class="seed s3"></span>
+            <span class="seed s4"></span><span class="seed s5"></span><span class="seed s6"></span>
+            <span class="face">
+              <i class="eye left"></i><i class="eye right"></i>
+              <i class="cheek left"></i><i class="cheek right"></i>
+              <i class="mouth"></i>
+            </span>
+            <span class="arm arm-left"></span><span class="arm arm-right"></span>
+            <span class="leg leg-left"></span><span class="leg leg-right"></span>
+          </div>
+        </div>
+        <span class="mascot-caption">your tiny birthday buddy 🍓</span>
+      </div>
+
+      <div class="scroll-cue">scroll gently <span>↓</span></div>
+    </section>
+
+    <!-- GARDEN -->
+    <section class="garden section" id="garden">
+      <div class="section-heading reveal">
+        <h2>Welcome to your<br><em>berry garden</em> 🍓</h2>
+        <p>Everyone here has a tiny personality. <p>Tap them and see what they have to say.</p></p>
+      </div>
+
+      <div class="garden-grid">
+        <button class="berry-card strawberry-card reveal" data-message="you deserve all the sweet things today" data-secret="false" type="button">
+          <span class="sticker-label">the sweet one</span>
+          <div class="mini-berry strawberry-character">
+            <div class="berry-leaves"><i></i><i></i><i></i></div>
+            <div class="berry-body">
+              <span class="seed s1"></span><span class="seed s2"></span><span class="seed s3"></span>
+              <span class="seed s4"></span><span class="seed s5"></span>
+              <span class="face"><i class="eye left"></i><i class="eye right"></i><i class="cheek left"></i><i class="cheek right"></i><i class="mouth"></i></span>
+              <span class="arm arm-left"></span><span class="arm arm-right"></span>
+              <span class="leg leg-left"></span><span class="leg leg-right"></span>
+            </div>
+          </div>
+          <span class="berry-name">Strawberry</span>
+          <span class="speech-bubble" aria-live="polite"></span>
+        </button>
+
+        <button class="berry-card blueberry-card reveal" data-message="don't forget to smile today!" data-secret="false" type="button">
+          <span class="sticker-label">the calm one</span>
+          <div class="mini-berry blueberry-character">
+            <div class="berry-body">
+              <span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span><span class="dot d4"></span>
+              <span class="face"><i class="eye left"></i><i class="eye right"></i><i class="cheek left"></i><i class="cheek right"></i><i class="mouth"></i></span>
+              <span class="arm arm-left"></span><span class="arm arm-right"></span>
+              <span class="leg leg-left"></span><span class="leg leg-right"></span>
+            </div>
+            <span class="blueberry-leaf"></span>
+          </div>
+          <span class="berry-name">Blueberry</span>
+          <span class="speech-bubble" aria-live="polite"></span>
+        </button>
+
+        <button class="berry-card cherry-card reveal" data-message="today is absolutely worth celebrating" data-secret="false" type="button">
+          <span class="sticker-label">the cheerful one</span>
+          <div class="mini-berry cherry-character">
+            <div class="cherries"><span></span><span></span></div>
+            <div class="berry-body one"><span class="face"><i class="eye left"></i><i class="eye right"></i><i class="cheek left"></i><i class="cheek right"></i><i class="mouth"></i></span></div>
+            <div class="berry-body two"><span class="face"><i class="eye left"></i><i class="eye right"></i><i class="cheek left"></i><i class="cheek right"></i><i class="mouth"></i></span></div>
+            <span class="arm arm-left"></span><span class="arm arm-right"></span>
+          </div>
+          <span class="berry-name">Cherry</span>
+          <span class="speech-bubble" aria-live="polite"></span>
+        </button>
+
+        <button class="berry-card raspberry-card reveal" data-message="okay... maybe life needs a little chaos sometimes" data-secret="false" type="button">
+          <span class="sticker-label">the chaotic one</span>
+          <div class="mini-berry raspberry-character">
+            <div class="raspberry-bumps"></div>
+            <div class="berry-body">
+              <span class="face"><i class="eye left"></i><i class="eye right"></i><i class="cheek left"></i><i class="cheek right"></i><i class="mouth"></i></span>
+              <span class="arm arm-left"></span><span class="arm arm-right"></span>
+              <span class="leg leg-left"></span><span class="leg leg-right"></span>
+              <span class="bow">♡</span>
+            </div>
+          </div>
+          <span class="berry-name">Raspberry</span>
+          <span class="speech-bubble" aria-live="polite"></span>
+        </button>
+
+        <button class="berry-card blackberry-card reveal secret-berry" data-message="tap multiple times" data-secret="true" type="button">
+          <span class="sticker-label">the mysterious one</span>
+          <div class="mini-berry blackberry-character">
+            <div class="berry-body">
+              <span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span><span class="dot d4"></span><span class="dot d5"></span>
+              <span class="face"><i class="eye left"></i><i class="eye right"></i><i class="cheek left"></i><i class="cheek right"></i><i class="mouth"></i></span>
+              <span class="arm arm-left"></span><span class="arm arm-right"></span>
+              <span class="leg leg-left"></span><span class="leg leg-right"></span>
+            </div>
+            <span class="berry-leaf-top">✦</span>
+          </div>
+          <span class="berry-name">Blackberry</span>
+          <span class="speech-bubble" aria-live="polite"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- LETTER -->
+<section class="letter-section section" id="letter">
+
+  <div class="section-heading reveal">
+    <h2>A little note for you 💌</h2>
+  </div>
+
+  <div class="letter-stage reveal" id="letterStage">
+
+    <!-- amplop -->
+    <div class="envelope-container" id="envelopeBox">
+      <div class="envelope-back"></div>
+      <div class="envelope-peek" aria-hidden="true"></div>
+      <div class="envelope-front"></div>
+      <div class="envelope-flap"></div>
+
+      <button class="envelope-button" id="envelope" type="button"
+              aria-label="Open birthday letter" aria-expanded="false" aria-controls="letterPaper">
+        <span class="wax">♡</span>
+      </button>
+    </div>
+
+    <!-- surat (tinggi menyesuaikan isi, tidak ada scroll di dalam kertas) -->
+    <div class="letter-reveal" id="letterReveal">
+      <div class="letter-reveal-clip">
+        <article class="letter-paper" id="letterPaper" aria-label="Birthday letter">
+          <span class="paper-tape" aria-hidden="true"></span>
+          <span class="paper-sticker sticker-berry" aria-hidden="true">🍓</span>
+          <span class="paper-sticker sticker-flower" aria-hidden="true">🌸</span>
+          <span class="paper-sticker sticker-heart" aria-hidden="true">♡</span>
+
+          <h3 class="letter-title" id="letterTitle">dear you,</h3>
+          <div class="letter-content" id="letterContent"></div>
+
+          <button class="letter-close" id="letterClose" type="button">fold it back</button>
+        </article>
+      </div>
+    </div>
+
+    <p class="click-note" id="letterHint">click the envelope</p>
+
+  </div>
+
+</section>
+
+    <!-- MEMORIES -->
+    <section class="memories section" id="memories">
+      <div class="section-heading reveal">
+        <h2>About Eli 🍓</h2>
+      </div>
+
+      <div class="polaroid-wall">
+        <figure class="polaroid tilt-left reveal">
+          <div class="photo-frame"><img src="./assets/images/memory-1.jpg" alt="Memory 1" loading="lazy"><span class="photo-placeholder">your photo<br>here ♡</span></div>
+          <figcaption>pretty</figcaption>
+        </figure>
+        <figure class="polaroid tilt-right reveal">
+          <div class="photo-frame"><img src="./assets/images/memory-2.jpg" alt="Memory 2" loading="lazy"><span class="photo-placeholder">a tiny<br>moment</span></div>
+          <figcaption>adorable</figcaption>
+        </figure>
+        <figure class="polaroid tilt-left reveal">
+          <div class="photo-frame"><img src="./assets/images/memory-3.jpg" alt="Memory 3" loading="lazy"><span class="photo-placeholder">add a<br>memory ♡</span></div>
+          <figcaption>cute</figcaption>
+        </figure>
+        <figure class="polaroid tilt-right reveal">
+          <div class="photo-frame"><img src="./assets/images/memory-4.jpg" alt="Memory 4" loading="lazy"><span class="photo-placeholder">another<br>little one</span></div>
+          <figcaption>charming</figcaption>
+        </figure>
+        <figure class="polaroid tilt-left reveal">
+          <div class="photo-frame"><img src="./assets/images/memory-5.jpg" alt="Memory 5" loading="lazy"><span class="photo-placeholder">favorite<br>snapshot</span></div>
+          <figcaption>gorgeus</figcaption>
+        </figure>
+        <figure class="polaroid tilt-right reveal">
+          <div class="photo-frame"><img src="./assets/images/memory-6.jpg" alt="Memory 6" loading="lazy"><span class="photo-placeholder">one more<br>for the wall</span></div>
+          <figcaption>ciee juara 1</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- MUSIC -->
+    <section class="music-section section" id="music">
+      <div class="section-heading reveal">
+        <h2>something to listen to ♫</h2>
+      </div>
+
+      <div class="music-card reveal">
+        <div class="cassette">
+          <div class="cassette-label">
+            <span class="cassette-name">Emelli</span>
+            <span class="cassette-side">D</span>
+          </div>
+          <div class="reels"><span></span><span></span></div>
+          <div class="cassette-line"></div>
+        </div>
+
+        <div class="music-info">
+          <div class="music-top">
+            <div>
+              <p class="eyebrow">now playing</p>
+              <h3 id="songTitle">Monokrom</h3>
+              <p id="songArtist">Tulus</p>
+            </div>
+            <div class="equalizer" id="equalizer" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+          </div>
+          <div class="progress-wrap">
+            <span id="currentTime">0:00</span>
+            <input id="progress" type="range" min="0" max="100" value="0" aria-label="Music progress">
+            <span id="duration">0:00</span>
+          </div>
+          <div class="music-controls">
+            <button id="playBtn" class="play-btn" type="button" aria-label="Play">▶</button>
+            <button id="muteBtn" class="icon-btn" type="button" aria-label="Mute">♫</button>
+            <input id="volume" type="range" min="0" max="1" value="0.7" step="0.05" aria-label="Volume">
+          </div>
+        </div>
+      </div>
+      <audio id="audio" preload="metadata" src="./assets/music/monokrom.mp3"></audio>
+    </section>
+
+    <!-- CAKE -->
+    <section class="cake-section section">
+      <div class="cake-copy reveal">
+        <p class="eyebrow">one last thing</p>
+        <h2>Make a wish ✨</h2>
+        <p>Close your eyes for a second. <p>And think of something you really want.</p></p>
+      </div>
+
+      <div class="cake-scene reveal">
+        <div class="cake-sparkles" id="cakeSparkles"></div>
+        <svg class="cake-svg" viewBox="0 0 320 290" role="img" aria-label="birthday cake with berries">
+          <defs>
+            <linearGradient id="spA" x1="0" x2="1"><stop offset="0" stop-color="#f7b0bf"/><stop offset="1" stop-color="#ee93a8"/></linearGradient>
+            <linearGradient id="spB" x1="0" x2="1"><stop offset="0" stop-color="#d3c5f0"/><stop offset="1" stop-color="#b9a7e3"/></linearGradient>
+            <pattern id="stripe" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="10" height="10" fill="#fff6ee"/><rect width="5" height="10" fill="#f4a7b8"/></pattern>
+            <g id="sb"><path d="M0-10c11-3 17 6 14 16C11 15 4 20 0 21-4 20-11 15-14 6-17-4-11-13 0-10z" fill="#e95b68"/><path d="M0-10l-8-6 8 2 8-2z" fill="#5fb878"/><g fill="#ffe08a"><ellipse cx="-5" cy="2" rx="1.1" ry="1.7"/><ellipse cx="5" cy="2" rx="1.1" ry="1.7"/><ellipse cx="0" cy="9" rx="1.1" ry="1.7"/><ellipse cx="0" cy="-2" rx="1.1" ry="1.7"/></g></g>
+          </defs>
+          <ellipse cx="160" cy="272" rx="146" ry="12" fill="#651f3c" opacity=".12"/>
+          <ellipse cx="160" cy="258" rx="146" ry="20" fill="#e9a5b2"/>
+          <ellipse cx="160" cy="252" rx="146" ry="20" fill="#f7c5cc"/>
+          <ellipse cx="160" cy="250" rx="118" ry="13" fill="#fff6ee" opacity=".55"/>
+          <rect x="48" y="170" width="224" height="78" rx="16" fill="url(#spA)"/>
+          <rect x="48" y="226" width="224" height="22" rx="11" fill="#d94c78" opacity=".12"/>
+          <g fill="#fff" opacity=".92"><circle cx="66" cy="239" r="3.4"/><circle cx="82" cy="239" r="3.4"/><circle cx="98" cy="239" r="3.4"/><circle cx="114" cy="239" r="3.4"/><circle cx="130" cy="239" r="3.4"/><circle cx="146" cy="239" r="3.4"/><circle cx="162" cy="239" r="3.4"/><circle cx="178" cy="239" r="3.4"/><circle cx="194" cy="239" r="3.4"/><circle cx="210" cy="239" r="3.4"/><circle cx="226" cy="239" r="3.4"/><circle cx="242" cy="239" r="3.4"/><circle cx="258" cy="239" r="3.4"/></g>
+          <g fill="#fff" opacity=".85" font-size="15" text-anchor="middle"><text x="84" y="222">♥</text><text x="136" y="226">♥</text><text x="190" y="222">♥</text><text x="242" y="226">♥</text></g>
+          <g fill="#fff6ee"><rect x="44" y="164" width="232" height="26" rx="13"/><circle cx="62" cy="190" r="11"/><circle cx="90" cy="192" r="13"/><circle cx="122" cy="190" r="11"/><circle cx="154" cy="193" r="13"/><circle cx="186" cy="190" r="11"/><circle cx="216" cy="192" r="13"/><circle cx="250" cy="190" r="11"/><rect x="104" y="184" width="16" height="36" rx="8"/><rect x="204" y="184" width="16" height="30" rx="8"/></g>
+          <rect x="86" y="104" width="148" height="64" rx="14" fill="url(#spB)"/>
+          <g fill="#fff6ee"><rect x="80" y="98" width="160" height="24" rx="12"/><circle cx="98" cy="122" r="9"/><circle cx="124" cy="124" r="10"/><circle cx="152" cy="122" r="9"/><circle cx="180" cy="124" r="10"/><circle cx="208" cy="122" r="9"/><rect x="134" y="118" width="13" height="30" rx="6.5"/><rect x="196" y="118" width="13" height="24" rx="6.5"/></g>
+          <g fill="#fff" opacity=".75" font-size="13" text-anchor="middle"><text x="108" y="158">♥</text><text x="160" y="162">♥</text><text x="212" y="158">♥</text></g>
+          <g fill="#6b5b9b"><circle cx="146" cy="96" r="7"/><circle cx="174" cy="96" r="7"/></g><g fill="#c7b7e9"><circle cx="144" cy="94" r="1.8"/><circle cx="172" cy="94" r="1.8"/></g>
+          <use href="#sb" transform="translate(106 92) scale(.62) rotate(-8)"/><use href="#sb" transform="translate(214 92) scale(.62) rotate(8)"/>
+          <use href="#sb" transform="translate(26 246) scale(.8)"/><use href="#sb" transform="translate(294 246) scale(.8)"/>
+          <g fill="#5fb878"><path d="M60 188q8-10 16-2-8 8-16 2z" opacity="0"/></g>
+          <rect x="127" y="56" width="10" height="44" rx="3" fill="url(#stripe)"/><rect x="155" y="52" width="10" height="48" rx="3" fill="url(#stripe)"/><rect x="183" y="56" width="10" height="44" rx="3" fill="url(#stripe)"/>
+          <g transform="translate(132 56)"><g class="sflame"><circle cy="-12" r="15" fill="#ffcf72" opacity=".3"/><path d="M0-26c6 8 8 15 0 24-8-9-6-16 0-24z" fill="#ffb85c"/><path d="M0-14c3 4 4 8 0 12-4-4-3-8 0-12z" fill="#fff3b0"/></g></g>
+          <g transform="translate(160 52)"><g class="sflame" style="animation-delay:.2s"><circle cy="-12" r="15" fill="#ffcf72" opacity=".3"/><path d="M0-26c6 8 8 15 0 24-8-9-6-16 0-24z" fill="#ffb85c"/><path d="M0-14c3 4 4 8 0 12-4-4-3-8 0-12z" fill="#fff3b0"/></g></g>
+          <g transform="translate(188 56)"><g class="sflame" style="animation-delay:.4s"><circle cy="-12" r="15" fill="#ffcf72" opacity=".3"/><path d="M0-26c6 8 8 15 0 24-8-9-6-16 0-24z" fill="#ffb85c"/><path d="M0-14c3 4 4 8 0 12-4-4-3-8 0-12z" fill="#fff3b0"/></g></g>
+          <g class="smoke" fill="#8c6c79"><circle cx="132" cy="46" r="4"/><circle cx="160" cy="42" r="4"/><circle cx="188" cy="46" r="4"/></g>
+        </svg>
+        <button class="wish-btn" id="wishBtn" type="button">Make a wish <span>✨</span></button>
+        <p class="wish-message" id="wishMessage"></p>
+      </div>
+    </section>
+
+    <!-- END -->
+    <section class="ending section" id="ending">
+      <div class="ending-berries" aria-hidden="true">
+        <span>🍓</span><span>🫐</span><span>🍒</span><span>🍓</span><span>🫐</span><span>🍒</span><span>🍓</span>
+      </div>
+
+      <div class="ending-copy reveal">
+        <p class="eyebrow">that's all... for now</p>
+        <h2>I hope today reminds you<br>of how loved and appreciated you are.</h2>
+        <p class="final-wish">Happy Birthday, <em id="finalName">elii</em> 🍓</p>
+        <p class="signature">— from someone who thinks you're pretty special</p>
+
+        <!-- kata rahasia: untuk HP yang tidak punya keyboard fisik -->
+        <form class="secret-word reveal" id="secretForm" autocomplete="off">
+          <label for="secretInput">btw.. there's a secret word</label>
+          <div class="secret-row">
+            <input id="secretInput" type="text" inputmode="text" enterkeyhint="go"
+                   autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false"
+                   maxlength="24" placeholder="hint: your favorite fruit">
+            <button type="submit" aria-label="Try the secret word">🍓</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="waving-berry strawberry-character reveal" aria-hidden="true">
+        <div class="berry-leaves"><i></i><i></i><i></i></div>
+        <div class="berry-body">
+          <span class="seed s1"></span><span class="seed s2"></span><span class="seed s3"></span><span class="seed s4"></span>
+          <span class="face"><i class="eye left"></i><i class="eye right"></i><i class="cheek left"></i><i class="cheek right"></i><i class="mouth"></i></span>
+          <span class="arm arm-left"></span><span class="arm arm-right waving"></span>
+          <span class="leg leg-left"></span><span class="leg leg-right"></span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>wish you all the best!!!</p>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
